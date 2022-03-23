@@ -1,0 +1,214 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url("common.css");
+@import url("photoObject.css");
+body {
+    background-image: url(../images/bg_up.png);
+    background-repeat: repeat-x;
+    background-position: center top;
+    color: #666633;
+	background-color: #cdebff;
+}
+header, nav, #path, #contents, footer {
+	width: 950px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+header h1 {
+	text-align: center;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+	margin-left: 0;
+	padding-top: 18px;
+}
+
+header h1 a img {
+    width: 480px;
+}
+
+nav ul {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 20px;
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	height: 0;
+	padding-top: 80px;
+	overflow: hidden;
+    float: left;
+    width: 150px;
+    margin-left: 44px;
+    margin-right: 43.5px;
+	background-position: 0px -80px;
+
+}
+nav ul li#nav_1 a {
+	background-image: url(../images/ken_nav.png);
+}
+nav ul li#nav_2 a {
+	background-image: url(../images/jyo_nav.png);
+}
+nav ul li#nav_3 a {
+	background-image: url(../images/kan_nav.png);
+}
+nav ul li#nav_4 a {
+    background-image: url(../images/ina_nav.png);
+}
+
+#main {
+	background-color: #ffffff;
+	float: left;
+	width: 670px;
+	padding: 20px;
+}
+#sub {
+	float: right;
+	width: 230px;
+	margin-left: 10px;
+}
+footer {
+	padding-top: 10px;
+}
+#main h1 {
+    font-size: 2rem;    /*font-size: 32px;*/
+	background-image: url(../images/bg_h1_underbar.png), url(../images/bg_h1_hato.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: left bottom, right top;
+	margin-top: 10px;
+	margin-bottom: 1em;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+	text-align: left;
+	text-indent: 1em;
+	color: #006600;
+}
+/*
+#kencho #nav_1 a, #jyoshi #nav_2 a, #kansui #nav_3 a, #inari #nav_4 a, nav ul li a:hover {
+	background-position: 0px -80px;
+}
+*/
+.chusyaku_right {
+	text-align: right;
+	font-size: 0.875rem;
+    color: #006666;
+    margin-right: 20px;
+}
+.chusyaku_left {
+	text-align: left;
+    font-size: 0.875rem;
+    color: #006666;
+	margin-left: 20px;
+}
+.chusyaku_center {
+	text-align: center;
+    font-size: 0.875rem;
+    color: #006666;
+}
+.bunsho_area {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.bunsho_area:last-child {
+	margin-bottom: 0;
+}
+
+
+/* common.css ここから↓ */
+#main h2 {
+	color: #ffffff;
+	font-size: 1.375rem;
+	background-image: url(../images/bg_bottom.gif), url(../images/bg_top.gif);
+	background-repeat: no-repeat, no-repeat;
+	background-position: left bottom, left top;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	text-indent: 10px;
+}
+.photo_right {
+	float: right;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.photo_center {
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+	text-align: center;
+}
+.photo_left {
+	float: left;
+	margin-top: 0;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+.font200 {
+	font-size: 200%;
+}
+
+/* common.css ここまで↑ */
+
+/* 基本レイアウト ここまで↑ */
+
+/* インデックス ここから↓ */
+#index {
+    background-image: url(../images/bg.png), url(../images/bg_up.png);
+    background-repeat: no-repeat, repeat-x;
+    background-position: center 140px, center top;
+}
+
+#index header h1 a img {
+    width: 800px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+
+}
+div #park {
+    position: relative;
+}
+#park a {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    width: 150px;
+    height: 80px;
+}
+#kencho_index {
+    background-image: url(../images/ken_nav.png);
+    transform: translate(-200%,-90%);
+}
+#jyoshi_index {
+    background-image: url(../images/jyo_nav.png);
+    transform: translate(-120%,0%);
+}
+#kansui_index {
+    background-image: url(../images/kan_nav.png);
+    transform: translate(-60%,-200%);
+}
+#inari_index {
+    background-image: url(../images/ina_nav.png);
+    transform: translate(130%,-100%);
+}
+#park a:hover{
+    background-position: 0px -80px;
+}
+
+/* インデックス ここまで↑ */

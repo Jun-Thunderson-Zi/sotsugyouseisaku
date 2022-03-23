@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/*
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+h1 {
+	width: 100%;
+	position: fixed;
+	top: 50vh;
+	left: 0px;
+	z-index: 10;
+	text-align: center;
+	margin-top: -0.5em;
+}
+h1 a {
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	font-family: serif;
+	text-shadow: 0px 3px 5px #000;
+	background: rgba(0,0,0,0.5);
+	padding: 1em 0;
+	margin-top: -1em;
+}
+*/
+div.photoObject {
+	width: 640px;
+	height: 426px;
+	margin: 0 auto;
+/*
+	width: 100%;
+	height: 100vh;
+	height: 100%;
+*/
+	background: #000;
+	position: relative;
+	top: 0px;
+	left: auto;
+}
+div.photoObject div {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	transition-timing-function: ease-in-out;
+}
+div.photoObject div span {
+	background-position: center center;
+	background-size: cover;
+	transition-timing-function: ease-in;
+}
+div.photoObject div,
+div.photoObject div span {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+div.photoObject div.s1,
+div.photoObject div.e2 {
+	opacity: 0;
+	background: #FFF;
+}
+div.photoObject div.s2,
+div.photoObject div.e1 {
+	opacity: 1;
+	background: #FFF;
+}
+
+div.photoObject span.anime_in_zoomin {
+	transform: scale(1.0);
+}
+div.photoObject span.anime_out_zoomin {
+	transform: scale(1.1);
+}
+
+div.photoObject span.anime_in_moveright {
+	transform: scale(1.2);
+	margin-left: -10%;
+}
+div.photoObject span.anime_out_moveright {
+	transform: scale(1.1);
+	margin-left: 0%;
+}
+
+div.photoObject span.anime_in_zoomout {
+	transform: scale(1.1);
+}
+div.photoObject span.anime_out_zoomout {
+	transform: scale(1.0);
+}
+div.photoObject span.anime_in_grayscale_zoomin {
+	filter: grayscale(100%);
+	transform: scale(1.2);
+}
+div.photoObject span.anime_out_grayscale_zoomin {
+	filter: grayscale(0%);
+	transform: scale(1.15);
+}
+div.photoObject span.anime_in_rotate {
+	transform: scale(1.2) rotate(5deg);
+}
+div.photoObject span.anime_out_rotate {
+	transform: scale(1.15) rotate(0deg);
+}
